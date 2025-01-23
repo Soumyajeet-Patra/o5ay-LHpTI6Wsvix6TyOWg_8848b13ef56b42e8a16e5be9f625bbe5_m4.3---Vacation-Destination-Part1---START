@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destinations WishList</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+    <h1>Washington Vacation Destinations Wishlist</h1>
+    <p>Found exciting places to visit? Add them to your wishlist!</p>
+</header>
+
+<main>
+    <div class="add-destination-form">
+        <h2>Add a Destination</h2>
+        <form id="destination-form">
+            <div class="form-group">
+                <label for="destination-name">Destination Name:</label>
+                <input type="text" id="destination-name" required>
+            </div>
+            <div class="form-group">
+                <label for="destination-location">Location:</label>
+                <input type="text" id="destination-location" required>
+            </div>
+            <div class="form-group">
+                <label for="destination-photo">Photo URL:</label>
+                <input type="url" id="destination-photo">
+            </div>
+            <div class="form-group">
+                <label for="destination-desc">Description:</label>
+                <textarea id="destination-desc" rows="3"></textarea>
+            </div>
+            <button type="submit">Add to Wishlist</button>
+        </form>
+    </div>
+
+    <div class="destination-container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1643513520547-cf90b9390129?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Leavenworth">
+            <div class="card-content">
+                <h3>Leavenworth, Washington</h3>
+                <h4>Pacific North West</h4>
+                <p>A Bavarian-inspired town, Leavenworth is perfect all around the year. It’s a great spot for a weekend getaway from Seattle and it’s best to plan the trip in advance because of the number of incredible events that are held here throughout the year.</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1535581652167-3a26c90bbf86?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Seattle">
+            <div class="card-content">
+                <h3>Seattle, Washington</h3>
+                <p>Seattle, a city on Puget Sound in the Pacific Northwest, is surrounded by water, mountains and evergreen forests, and contains thousands of acres of parkland.</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1697778136878-3cbe41526abe?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rainier">
+            <div class="card-content">
+                <h3>Mt. Rainier, Washington</h3>
+                <h4>Europe</h4>
+                <p>One of the oldest national parks in the world, Mount Rainier National Park is set in Pierce County.</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
